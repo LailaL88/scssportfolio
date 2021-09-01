@@ -1,0 +1,117 @@
+@include media-sm {
+    .home .social-icons, .home footer {
+        position: initial;
+        text-align: center;
+    }
+
+    .home .social-icons {
+        margin-top: 3rem;
+    }
+
+    .about .social-icons , .projects .social-icons{
+        font-size: 15px;
+        left: 5px;
+    }
+
+    .contact h2 {
+        padding-left: 1.2rem;
+        width: 320px;
+    }
+
+    .contact .text-secondary {
+        font-size: 1.2rem;
+    }
+}
+
+@include media-md {
+
+    .home {
+        margin-top: -90px;
+    }
+
+    .menu-btn {
+        visibility: hidden;
+    }
+
+    nav, header {
+        position: initial;
+    }
+
+    .nav {
+        visibility: visible;
+        .menu-nav {
+            display: block;
+            transform: translateY(0);
+            height: 100%;
+            background: transparent;
+            text-align: right;
+            padding-top: 1rem;
+
+            &__item {
+                display: inline;
+                padding-right: 1.5rem;   
+            }
+
+            &__link {
+                font-size: 1.5rem;
+                
+            }
+        }
+    }
+
+    .about__bio {
+        font-size: 1.5rem;
+        
+    }
+
+    .about{
+        &__bio-image {
+        height: 65vh;
+        margin-top: -110px;
+        }
+    }
+    .projects {
+        &__bio-image {
+            height: 55vh;
+            margin-top: -110px;
+        }
+
+        &__items {
+            grid-template-columns: repeat(2, 1fr);
+        }
+
+        .text-secondary {
+            font-size: 3rem;
+        }
+    }
+
+    .contact {
+        margin-top: -90px;
+
+        h2 {
+            padding-left: 2.5rem;
+        }
+
+        &__list {
+            grid-template-columns: repeat(2, 1fr);
+            padding: 3rem 0rem;
+        }
+    }
+}
+
+@include media-xl {
+    .projects {
+        &__items {
+            grid-template-columns: repeat(3, 1fr);
+        }
+    }
+}
+
+@include media-lg {
+    .contact {
+        padding-bottom: 40vh;
+        &__list {
+            grid-template-columns: repeat(3, 1fr);
+        }
+    }
+}
