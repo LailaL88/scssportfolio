@@ -6,7 +6,7 @@
 }
 
 .home {
-  height: 100%;
+  height: 100vh;
   padding-top: 40vh;
   overflow: hidden;
   text-align: center;
@@ -424,6 +424,9 @@ nav .menu-nav__link:hover {
 }
 
 @media only screen and (max-width: 560px) {
+  .home {
+    height: 100%;
+  }
   .home .social-icons, .home footer {
     position: initial;
     text-align: center;
@@ -524,7 +527,7 @@ nav .menu-nav__link:hover {
 body {
   background: #272727;
   color: white;
-  height: 100vh;
+  height: 100%;
   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
   line-height: 1;
 }
