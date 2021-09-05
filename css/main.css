@@ -481,7 +481,9 @@ nav .menu-nav__link:hover {
   .about-body {
     overflow-y: scroll;
     width: 100%;
-    height: 100%;
+    height: -webkit-max-content;
+    height: -moz-max-content;
+    height: max-content;
   }
   .about__bio {
     font-size: 1.5rem;
