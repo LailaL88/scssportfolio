@@ -187,6 +187,7 @@ nav .menu-nav__link:hover {
 
 .about {
   padding-bottom: 2rem;
+  width: 100%;
 }
 
 .about__bio-image {
@@ -479,6 +480,7 @@ nav .menu-nav__link:hover {
   }
   .about-body {
     overflow-y: scroll;
+    width: 100%;
   }
   .about__bio {
     font-size: 1.5rem;
