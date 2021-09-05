@@ -476,6 +476,9 @@ nav .menu-nav__link:hover {
   .nav .menu-nav__link {
     font-size: 1.5rem;
   }
+  .about-body {
+    overflow-y: scroll;
+  }
   .about__bio {
     font-size: 1.5rem;
   }
